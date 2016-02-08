@@ -1,3 +1,5 @@
+![build](https://travis-ci.org/belisarus/unit-test-sample-master.svg?branch=master)
+
 Pour lancer la solution:
 
 ~~~
