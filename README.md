@@ -1,12 +1,11 @@
-![build](https://travis-ci.org/belisarus/unit-test-sample-master.svg?branch=master)
-
+[![Build Status](https://travis-ci.org/belisarus/unit-test-sample-master.svg?branch=master)](https://travis-ci.org/belisarus/unit-test-sample-master)
 Pour lancer la solution:
 
 ~~~
 $npm install
 ~~~
 
-followed by 
+followed by
 
 ~~~
 $gulp build

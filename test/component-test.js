@@ -23,7 +23,7 @@ describe('Testing my div', function () {
     });
 
     it('should return 77 before', function () {
-        var component = proxyquire("../components/component.jsx", stub);
+        let component = proxyquire("../app/components/component.jsx", stub);
 
         var VeryFirstDiv = component;
 
@@ -44,7 +44,7 @@ describe('Testing my div', function () {
             }
         };
 
-        var component = proxyquire("../components/component.jsx", stub);
+        let component = proxyquire("../app/components/component.jsx", stub);
 
         var VeryFirstDiv = component;
 
@@ -58,7 +58,7 @@ describe('Testing my div', function () {
     });
 
     it('should return 77 after', function () {
-        var component = proxyquire("../components/component.jsx", stub);
+        let component = proxyquire("../app/components/component.jsx", stub);
 
         var VeryFirstDiv = component;
 
