@@ -1,7 +1,7 @@
 {
   "name": "react-mocha-example",
   "version": "1.0.0",
-  "description": "Getting started with React and Mocha",
+  "description": "projet de test avec mock de libraries, react, ES6",
   "main": "index.html",
   "devDependencies": {
     "babel": "^6.1.18",
@@ -30,9 +30,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JelenaBarinova/react-mocha-example.git"
+    "url": "https://github.com/belisarus/unit-test-sample-master.git"
   },
-  "homepage": "http://jelenabarinova.github.io/react-mocha-example",
-  "author": "Lena Barinova",
+  "homepage": "https://github.com/belisarus/unit-test-sample-master",
+  "author": "Baptiste RAYMOND",
   "license": "MIT"
 }
