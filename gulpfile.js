@@ -11,7 +11,7 @@ var isparta = require('isparta');
 var runSequence = require('run-sequence');
 
 // Files to process
-var TEST_FILES = './test/**/*.js';
+var TEST_FILES = './test/**/*.spec.js';
 var SRC_FILES = './app/**/*.js';
 
 /**

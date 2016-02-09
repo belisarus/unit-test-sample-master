@@ -1,4 +1,4 @@
-require('./dom-mock')('<html><body></body></html>');
+require('../testUtils/dom-mock')('<html><body></body></html>');
 var jsdom = require('mocha-jsdom');
 var assert = require('assert');
 var React = require('react');
@@ -23,7 +23,7 @@ describe('Testing my div', function () {
     });
 
     it('should return 77 before', function () {
-        let component = proxyquire("../app/components/component.jsx", stub);
+        let component = createComponent(stub);
 
         var VeryFirstDiv = component;
 
@@ -44,7 +44,7 @@ describe('Testing my div', function () {
             }
         };
 
-        let component = proxyquire("../app/components/component.jsx", stub);
+        let component = createComponent(stub);
 
         var VeryFirstDiv = component;
 
@@ -58,7 +58,7 @@ describe('Testing my div', function () {
     });
 
     it('should return 77 after', function () {
-        let component = proxyquire("../app/components/component.jsx", stub);
+        let component = createComponent(stub);
 
         var VeryFirstDiv = component;
 
@@ -72,3 +72,7 @@ describe('Testing my div', function () {
         assert.equal(divText.textContent, 'Lovely! Here it is - my very first React component! 77 12');
     });
 });
+
+function createComponent(stub){
+    return proxyquire("../../app/components/component.jsx", stub);
+}
