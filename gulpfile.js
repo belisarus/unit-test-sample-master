@@ -60,7 +60,8 @@ gulp.task('coverage:instrument', function () {
         .pipe(istanbul({
             instrumenter: isparta.Instrumenter
         }))
-        .pipe(istanbul.hookRequire()); // Force `require` to return covered files
+        // Force `require` to return covered files
+        .pipe(istanbul.hookRequire());
 });
 
 /**
