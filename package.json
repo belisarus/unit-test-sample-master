@@ -30,7 +30,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "scripts": {
-    "test": "mocha test/**/*-test.js --compilers js:babel-core/register --recursive"
+    "test": "mocha test/**/*.spec.js --compilers js:babel-core/register --recursive"
   },
   "repository": {
     "type": "git",
